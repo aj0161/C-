@@ -107,8 +107,6 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 //		   the forcast	in the last peroid to a fraction of the error from the last 
 //		   peroid	
 // Formula: new Forcast_val = Lambda * Last Actual_val + (1 - Lambda)* Last Forcast_val
-//https://www.otexts.org/fpp/7/1
-// https://www.youtube.com/watch?v=k_HN0wOKDd0&list=WL&index=30
 double* Forecast_Exponential_Smoothing(double lambda,double Memory_Usages[], double* Forcast_vals, int length){
 	
 	double Actual_val= 0.0; 
@@ -193,7 +191,7 @@ double Calculate_LinearRegression_RSquared(double Predicted_vals[], double Actua
 	return  ((SSE/SST));
 }
 
-//ref: https://www.youtube.com/watch?v=aztcS-3MwH0&t=578s
+
 void Calculate_Linear_Regression(double x[], double y[], int length) {
 
 	double xSum = 0, y2Sum = 0, x2Sum = 0, ySum =0, xySum = 0;
